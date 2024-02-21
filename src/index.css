@@ -4,7 +4,7 @@
   margin: 100%;
 } */
 
-h1 {
+/* h1 {
   font-size: 4rem;
 }
 
@@ -23,7 +23,7 @@ button {
   background-color: rgb(115, 202, 115);
 }
 
-*/ .delete-button {
+.delete-button {
   background-color: blueviolet;
 }
 
@@ -60,4 +60,118 @@ li {
   padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: #213547;
+}
+
+.container {
+  background: linear-gradient(to right booton, #ededf5, #daf253);
+  width: 100%;
+  min-hight: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: #535bf2;
+  min-width: 350px;
+  min-height: 550px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px #aa53f2;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  color: #f9f9f9;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 20px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #aa53f2;
+  background-color: #5a3e2b;
+  border: 1px solid #213547;
+  border-radius: 10px;
+}
+
+.button-add {
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3;
+  background-color: #f4a226;
+  cursor: pointer;
+
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid #213547;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
+  color: #213547;
+}
+
+.button-complete {
+  color: #747bff;
+  margin-right: 10px;
+}
+
+.button-edit {
+  color: #5a3e2b;
+  margin-right: 10px;
+}
+
+.button-done {
+  text-decoration: line-through;
+}
+
+.button-delete {
+  color: #ffb3b3;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #242424;
+  opacity: 0.6;
+}
+
+.list {
+  width: 220px;
+  background-color: #646cff;
+  border: none;
+  color: #ededf5;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
 }

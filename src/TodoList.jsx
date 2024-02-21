@@ -1,7 +1,7 @@
 
-import { Button, Input, List } from "@mui/joy";
+import { Button, Checkbox, Input, List } from "@mui/joy";
 import React, { useState } from "react";
-
+import { MdDeleteForever } from "react-icons/md";
 function ToDoList() {
 
     const [tasks, setTasks] = useState(["Eat Breakfast", "Take a showe"]);
@@ -28,12 +28,23 @@ function ToDoList() {
     }
 
     function editTask(index) {
+        // return (
+
+        // )
 
     }
 
-    function doneTaskDown(index) {
+    function completeTask(index) {
+        setTasks(
+            tasks.map((tasks) => {
+                if (index.id === tasks.id) {
+                    return { ...index, completed: !index.completed };
+                }
+                return index;
+            })
+        );
 
-    }
+    };
 
 
 
@@ -60,14 +71,14 @@ function ToDoList() {
                         <span className="text"> {task} </span>
                         <Button className="delete-button"
                             onClick={() => deleteTask(index)}>
-                            Delete
+                            < MdDeleteForever />
                         </Button>
                         <Button className="edit-button"
                             onClick={() => editTask(index)}>
                             Edit
                         </Button>
-                        <Button className="done-button"
-                            onClick={() => doneTask(index)}>
+                        <Button className="complete-button"
+                            onClick={() => completeTask(index)}>
                             Done
                         </Button>
                     </List>

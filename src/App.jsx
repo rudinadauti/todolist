@@ -3,7 +3,11 @@ import ToDoList from "./TodoList";
 function App() {
 
   return (
-    <ToDoList />
+    <div className="container">
+      <div className="app-wrapper">
+        <ToDoList />
+      </div>
+    </div>
   );
 }
 export default App
